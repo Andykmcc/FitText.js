@@ -24,11 +24,11 @@ jQuery("#responsive_headline").fitText(0.8); // Turn the compressor down (resize
 
 This will hopefully give you a level of "control" that might not be pixel perfect, but resizes smoothly & nicely.
 
-## minFontSize & maxFontSize
-FitText now allows you to specify two optional pixel values: `minFontSize` and `maxFontSize`. Great for situations when you want to preserve hierarchy.
+## minFontSize & maxFontSize & animation smoothing
+FitText now allows you to specify two optional pixel values: `minFontSize` and `maxFontSize`. Great for situations when you want to preserve hierarchy. You can also adjust animation smoothing by specifying a `transitionduration`. 
 
 ```javascript
-jQuery("#responsive_headline").fitText(1.2, { minFontSize: '20px', maxFontSize: '40px' })
+jQuery("#responsive_headline").fitText(1.2, { minFontSize: '20px', maxFontSize: '40px', transitionduration : '75ms' })
 ```
 
 ## CSS FAQ
@@ -40,6 +40,7 @@ jQuery("#responsive_headline").fitText(1.2, { minFontSize: '20px', maxFontSize: 
 - Fire
 
 ## Changelog
+* `v 1.2` - Added line-height, letter-spacing and smoothing animations. 
 * `v 1.1` - FitText now ignores font-size and has minFontSize & maxFontSize options
 * `v 1.0.1` - Fix for broken font-size.
 * `v 1.0` - Initial Release

@@ -48,9 +48,6 @@
 				});
 			};
 
-			// Call once to set.
-			// resizer();
-
 			// resize loop at 60fps to remove window event listener
 			setTimeout(function(){
 				resizer();
